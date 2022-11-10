@@ -1,0 +1,93 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/table.jpg");
+	height: 100vh;
+	font-family: "Exo 2", sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+}
+
+.image-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.war-heading {
+	text-align: center;
+	color: white;
+	font-weight: 400;
+	margin: 0;
+}
+
+.center-text {
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+}
+
+.card-placeholder {
+	border: 2px solid black;
+	opacity: 0.5;
+	padding: 4em 3em;
+}
+
+img {
+	margin: 0.5em;
+	width: 6em;
+}
+
+.remaining-cards {
+	color: white;
+}
+
+.disabled {
+	background-color: black;
+	color: white;
+	cursor: not-allowed;
+}
+
+.disabled:active,
+.disabled:focus,
+.disable:hover {
+	background-color: black;
+}
+
+.new-deck-btn {
+	align-self: flex-start;
+	border-radius: 5px;
+	padding: 5px 20px;
+	font-size: 1rem;
+}
+
+button {
+	background-color: gold;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.draw-card-btn {
+	width: 100%;
+	padding: 5px;
+	font-size: 1.25rem;
+}
+
+button:active {
+	background-color: goldenrod;
+}
+
+@media (min-width: 750px) {
+	img {
+		width: 12em;
+	}
+}
